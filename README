@@ -1,0 +1,40 @@
+IMDB Tools
+==========
+
+IMDB Tools is a collection of some scripts to fetch Information from the
+Internet Movie DataBase (IMDB).
+
+Please note that these scripts are at a very basic stage in development and were
+written in a couple of minutes. So don't expect them to be either fast nor correct.
+
+imdb-cast.pl
+============
+
+This script fetches the cast, directors and writers of a movie from the IMDB.
+
+Usage:
+
+./imdb-cast.pl <IMDB movie address>
+
+Example:
+
+./imdb-cast.pl http://www.imdb.com/title/tt0796366/
+
+Note that the trailing slash "/" _IS NEEDED_
+
+imdb-episodes.pl
+================
+
+This script fetches the cast, directors, writers, episode number and season number
+of a TV series from the IMDB.
+
+Usage:
+
+./imdb-episodes.pl <IMDB TV series address>
+
+Example:
+
+./imdb-episodes.pl http://www.imdb.com/title/tt0106179/
+
+Note that the trailing slash "/" _IS NEEDED_
+
