@@ -14,7 +14,9 @@ my @directorsOfEpisode;
 my @writersOfEpisode;
 
 # Reduce the URL to the IMDB ID of the series
-$seriesURL =~ s/.*tt[0]*([0-9]*)\/$/$1/;
+# $seriesURL =~ s/.*tt[0]*([0-9]*)\/$/$1/;
+$seriesURL = substr($seriesURL, 26, 9);
+
 
 # Fetch the list of episodes contained in the series
 my $seriesData       = new IMDB::Film(crit => $seriesURL);

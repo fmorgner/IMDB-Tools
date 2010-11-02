@@ -13,7 +13,8 @@ my @castOfFilm;
 my @directorsOfFilm;
 my @writersOfFilm;
 
-$filmURL =~ s/.*tt[0]*([0-9]*)\/$/$1/;
+# $filmURL =~ s/.*tt[0]*([0-9]*)\/$/$1/;
+$filmURL = substr($filmURL, 26, 9);
 my $filmData = new IMDB::Film(crit => $filmURL);
 
 sub printCastOfFilm
